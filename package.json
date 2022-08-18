@@ -12,12 +12,20 @@
   "bugs": {
     "url": "https://github.com/fsmaia/typedoc-plugin-dompurify/issues"
   },
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "keywords": [
+    "typedocplugin",
+    "typedoc"
+  ],
+  "files": [
+    "src",
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "commit": "cz",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install",
+    "prepare": "husky install && npm run build",
     "start": "tsc --watch",
     "semantic-release": "semantic-release"
   },
@@ -25,7 +33,7 @@
     "typedoc": "0.23.x"
   },
   "dependencies": {
-    "dompurify": "^2.3.10"
+    "isomorphic-dompurify": "^0.20.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
@@ -36,7 +44,6 @@
     "husky": "^8.0.1",
     "prettier": "^2.7.1",
     "semantic-release": "^19.0.3",
-    "typedoc": "^0.23.10",
     "typescript": "^4.7.4"
   }
 }
