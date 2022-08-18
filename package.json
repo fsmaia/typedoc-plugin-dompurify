@@ -1,0 +1,42 @@
+{
+  "name": "typedoc-plugin-dompurify",
+  "version": "0.0.0-development",
+  "author": "Fernando Maia",
+  "description": "A plugin for TypeDoc which runs DOMPurify",
+  "homepage": "https://github.com/fsmaia/typedoc-plugin-dompurify#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fsmaia/typedoc-plugin-dompurify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fsmaia/typedoc-plugin-dompurify/issues"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "commit": "cz",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "start": "tsc --watch",
+    "semantic-release": "semantic-release"
+  },
+  "peerDependencies": {
+    "typedoc": "0.23.x"
+  },
+  "dependencies": {
+    "dompurify": "^2.3.10"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@types/dompurify": "^2.3.3",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "semantic-release": "^19.0.3",
+    "typedoc": "^0.23.10",
+    "typescript": "^4.7.4"
+  }
+}
